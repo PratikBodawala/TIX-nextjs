@@ -34,7 +34,7 @@ module.exports = {
             shade100:'#FFFFFF',
           },
           backgroundImage:{
-            'theater': 'url("/images/theater-bg-img.jpeg")',
+            'theater': 'url("/images/theater-bg-img.webp")',
           },
           fontFamily: {
             "body": ["Roboto",
