@@ -1,13 +1,16 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Login from "../components/Login/Login";
 
 const Home: NextPage = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <div className="bg-theater h-screen w-screen">
+
+        <div className="flex flex-col items-end">
+            <div className="bg-white h-[772px] w-[720px] m-16">
+                <Login/>
+            </div>
+        </div>
+    </div>
   )
 }
 
