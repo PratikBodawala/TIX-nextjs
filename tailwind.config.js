@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
         extend: {
+          placeholderColor:{
+            'primary': (theme) => theme('colors.shade400'),
+          },
           colors: {
             clifford: '#da373d',
             royalBlue: '#1A2C50',

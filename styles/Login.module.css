@@ -1,37 +1,21 @@
 .phoneInputBox {
-  display: flex;
-  align-items: center;
-  max-width: 300px;
-  background: #fff;
+  @apply flex items-center bg-white gap-4 overflow-hidden p-0 pr-1;
   border-bottom: 1px solid #a0a0a0;
-  gap: 1rem;
-  padding-left: 0.5rem;
-  overflow: hidden;
-  font-family: sans-serif;
 }
 
-.phoneInputBox .prefix {
-  font-weight: 300;
-  font-size: 14px;
-  color: #999;
+span.prefix {
+  @apply text-shade400 text-lg ;
+}
+.phoneInputBox input{
+  @apply flex-1 border-none outline-none p-0 h-8;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
-.phoneInputBox input {
+.phoneInputBox input::placeholder {
+  @apply text-lg border-0 text-shade400;
   flex-grow: 1;
-  font-size: 14px;
-  background: #fff;
   border: none;
   outline: none;
-  padding: 0.5rem;
-}
-
-.phoneInputBox:focus-within {
-  border-color: #777;
-}
-
-.formInput {
-  outline: 0;
-  border-width: 0 0 1px;
-  border-color: blue;
-  background-color: #999999;
 }

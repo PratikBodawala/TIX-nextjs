@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type {NextPage } from 'next'
 import Login from "../components/Login/Login";
 
 const Home: NextPage = () => {
@@ -6,9 +6,9 @@ const Home: NextPage = () => {
       <div className="bg-theater h-screen w-screen">
 
         <div className="flex flex-col items-end">
-            <div className="bg-white h-[772px] w-[720px] m-16">
+            <section className="bg-white h-[772px] w-[720px] m-16">
                 <Login/>
-            </div>
+            </section>
         </div>
     </div>
   )

@@ -1,4 +1,6 @@
 import styles from '/styles/Login.module.css'
+import eyeIcon from '/public/images/eye-icon.svg'
+import Image from 'next/image'
 const Login = () => {
     return (
         <div className="p-20">
@@ -10,23 +12,20 @@ const Login = () => {
                     </label>
                     <div className={styles.phoneInputBox}>
                         <span className="prefix">+91</span>
-                        <span>|</span>
-                        <input
-                        style={{
-                                border: 'none !important',
-                            }}
-                            id="phone_number" type="text" placeholder="enter phone number here"/>
+                        <span className="h-[18px] border-[1px]"/>
+                        <input id="phone_number" type="text" placeholder="enter phone number here"/>
 
                     </div>
                 </div>
                 <div className="mb-6">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+                    <label className="block text-shade900 text-lg font-normal mb-2" htmlFor="password">
                         PASSWORD
                     </label>
-                    <input
-                        className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                        id="password" type="password" placeholder="enter password here"/>
-                    <p className="text-red-500 text-xs italic">Please choose a password.</p>
+                    <div className={styles.phoneInputBox}>
+                    <input id="password" type="password" placeholder="enter password here"/>
+                    <Image src={eyeIcon} />
+                    </div>
+                    {/*<p className="text-red-500 text-xs italic">Please choose a password.</p>*/}
                 </div>
                 <div className="flex items-center justify-between">
                     <button
