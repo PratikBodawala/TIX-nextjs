@@ -1,9 +1,10 @@
 import styles from '/styles/Login.module.css'
 import eyeIcon from '/public/images/eye-icon.svg'
 import Image from 'next/image'
+
 const Login = () => {
     return (
-        <div className="p-20">
+        <div className="p-20" >
             <h2 className='font-bold text-4xl my-4'>TIX ID</h2>
             <form className="w-[423px] my-16">
                 <div className="mb-4">
@@ -22,8 +23,8 @@ const Login = () => {
                         Password
                     </label>
                     <div className={styles.phoneInputBox}>
-                    <input id="password" type="password" placeholder="enter password here"/>
-                    <Image src={eyeIcon} />
+                        <input id="password" type="password" placeholder="enter password here"/>
+                        <Image src={eyeIcon}/>
                     </div>
                     {/*<p className="text-red-500 text-xs italic">Please choose a password.</p>*/}
                 </div>
@@ -34,7 +35,10 @@ const Login = () => {
                         Login
                     </button>
                     <span className="text-xs mt-6 text-shade600">don&apos;t have account?</span>
-                    <button className="mt-2 font-default text-royalBlue rounded border-[1px] border-shade600 text-xl font-medium w-full h-12">Create account</button>
+                    <button
+                        className="mt-2 font-default text-royalBlue rounded border-[1px] border-shade600 text-xl font-medium w-full h-12">Create
+                        account
+                    </button>
                 </div>
             </form>
 

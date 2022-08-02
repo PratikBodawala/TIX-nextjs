@@ -3,10 +3,15 @@ import Login from "../components/Login/Login";
 
 const Home: NextPage = () => {
   return (
-      <div className="bg-theater h-screen w-screen">
+      <div className="bg-theater h-screen w-screen"  style={{ backgroundImage: "url('/images/theater-bg-img.webp')",
+      backgroundRepeat: 'no-repeat',
+        backgroundSize: 'fill',
+        // backgroundAttachment: 'fixed'
+
+      }}>
 
         <div className="flex flex-col items-end">
-            <section className="bg-white h-[772px] w-[720px] m-16">
+            <section className="bg-white m-16">
                 <Login/>
             </section>
         </div>
