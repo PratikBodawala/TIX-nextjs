@@ -1,6 +1,6 @@
 import styles from '/styles/Login.module.css'
 import eyeIcon from '/public/images/eye-icon.svg'
-import Image from 'next/image'
+import Image from 'next/future/image'
 
 const Login = () => {
     return (
@@ -24,7 +24,7 @@ const Login = () => {
                     </label>
                     <div className={styles.phoneInputBox}>
                         <input id="password" type="password" placeholder="enter password here"/>
-                        <Image src={eyeIcon}/>
+                        <Image src={eyeIcon} alt={'Background image of theater'}/>
                     </div>
                     {/*<p className="text-red-500 text-xs italic">Please choose a password.</p>*/}
                 </div>
