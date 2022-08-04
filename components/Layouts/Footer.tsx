@@ -10,13 +10,13 @@ import appStore from '/public/images/App-Store.webp'
 class Footer extends Component {
     render() {
         return (
-            <footer className="fixed bottom-0 bg-white dark:bg-gray-900 w-full">
-                <div className="flex gap-24 py-8 md:grid-cols-4 px-16">
-                    <div>
+            <footer className="bottom-0 bg-white dark:bg-gray-900 w-full">
+                <div className="flex py-8 px-16 w-full">
+                    <div className="w-full">
                         <Image src={logoImage} alt={'Logo of TIX ID'} style={{verticalAlign: 'middle'}} height={65}
                                width={130}/>
                     </div>
-                    <div>
+                    <div className="w-full">
                         <h5 className="mb-6 font-medium text-lg text-shade900">Perusahaan</h5>
                         <ul className="text-gray-500 dark:text-gray-400 text-base">
                             <li className="mb-4">
@@ -30,7 +30,7 @@ class Footer extends Component {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="w-full">
                         <h4 className="mb-6 font-medium text-lg text-shade900">Seputar</h4>
                         <ul className="text-gray-500 dark:text-gray-400">
                             <li className="mb-4">
@@ -50,7 +50,7 @@ class Footer extends Component {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div  className="w-full">
                         <h4 className="mb-6 font-medium text-lg text-shade900">Dukungan</h4>
                         <ul className="text-gray-500 dark:text-gray-400">
                             <li className="mb-4">
@@ -70,7 +70,7 @@ class Footer extends Component {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="w-full">
                         <h4 className="mb-6 font-medium text-lg text-shade900">Follow Social
                             Media</h4>
                         <ul className="text-gray-500 dark:text-gray-400">
@@ -82,7 +82,7 @@ class Footer extends Component {
                             <li className="mb-6">
                                 <a href="#" className="hover:underline">Download Aplikasi TIX ID</a>
                             </li>
-                            <li className="flex mb-9 gap-x-[21.52px]">
+                            <li className="flex mb-9 space-between">
                                 <Image src={googlePlay} alt={'Get it on Google Play'}/>
                                 <Image src={appStore} alt={'Get it on App Store'}/>
                             </li>

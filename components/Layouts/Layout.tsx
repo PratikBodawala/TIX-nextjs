@@ -9,7 +9,7 @@ const Layout: React.FC<any> = ({ children })=> {
         <title>TIX ID</title>
         <meta name="description" content="TIX: booking movie ticket to your favorite theater."/>
       </Head>
-    <div className="bg-theater h-screen w-screen">
+    <div className="bg-theater">
       <NavBar />
       <main className="flex flex-col items-center justify-center">{children}</main>
       <Footer />

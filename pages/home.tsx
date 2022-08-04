@@ -1,8 +1,9 @@
 import type {NextPage } from 'next';
+import PrimaryPosterCarousel from "../components/Carousel/PrimaryPosterCarousel";
 
 const Home: NextPage = () => {
   return (<>
-      <h1>Home page</h1>
+          <PrimaryPosterCarousel/>
       </>)
 }
 
