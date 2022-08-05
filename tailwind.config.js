@@ -21,7 +21,7 @@ module.exports = {
             cgvRed: '#EC1E2B',
             xxiGradient: '#',
             cinepolisBlue: '#000E62',
-
+            advertisementGray: '#F3F3F3',
             btnDefault: '#1A2C50',
             btnHover: '#282764',
             btnPressed: '#383782',
