@@ -3,7 +3,7 @@ import Login from "../components/Login/Login";
 
 const Home: NextPage = () => {
   return (
-      <div className="bg-theater h-screen w-screen"  style={{ backgroundImage: "url('/images/theater-bg-img.webp')",
+      <div className="bg-theater"  style={{ backgroundImage: "url('/images/theater-bg-img.webp')",
       backgroundRepeat: 'no-repeat',
         backgroundSize: 'fill',
         // backgroundAttachment: 'fixed'

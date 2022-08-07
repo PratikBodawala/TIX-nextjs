@@ -11,7 +11,7 @@ const Layout: React.FC<any> = ({ children })=> {
       </Head>
     <div className="bg-theater">
       <NavBar />
-      <main className="flex flex-col items-center justify-center">{children}</main>
+      <main>{children}</main>
       <Footer />
     </div></>
   );
