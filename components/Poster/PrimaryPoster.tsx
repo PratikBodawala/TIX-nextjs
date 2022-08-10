@@ -2,19 +2,23 @@ import Image, { StaticImageData } from "next/future/image";
 import React from "react";
 import Badge from "../Badge/Badge";
 
-type PrimaryPosterProps = {
+export type PrimaryPosterProps = {
+  id: number;
   imageLocation: StaticImageData | string;
-  imgAlt: string;
   name: string;
-  loading: "lazy" | "eager";
+  theater: Array<"xxi" | "cgv" | "cinepolis" | "">;
 };
 
-const PrimaryPoster: React.FC<PrimaryPosterProps> = ({
-  imageLocation,
-  name,
-  imgAlt,
-  loading,
-}) => (
+const mapTheaterComponent = {
+  xxi: <Badge text="XXI" color="bg-pastelYellow" />,
+  cgv: <Badge text="CGV" color="bg-cgvRed" />,
+  cinepolis: <Badge text="CINÉPOLIS" color="bg-cinepolisBlue" />,
+  "": "",
+};
+
+const PrimaryPoster: React.FC<
+  PrimaryPosterProps & { imgAlt: string; loading: "lazy" | "eager" }
+> = ({ imageLocation, name, imgAlt, loading, theater = [""] }) => (
   <div className="flex flex-col items-center">
     <Image
       className="rounded-2xl mb-[52px]"
@@ -27,9 +31,7 @@ const PrimaryPoster: React.FC<PrimaryPosterProps> = ({
     <h2 className="font-bold text-4xl mb-[30px]">{name}</h2>
 
     <div className="flex gap-x-[18px]">
-      <Badge text="XXI" color="bg-pastelYellow" />
-      <Badge text="CGV" color="bg-cgvRed" />
-      <Badge text="CINÉPOLIS" color="bg-cinepolisBlue" />
+      {theater.map((theaterType) => mapTheaterComponent[theaterType])}
     </div>
   </div>
 );

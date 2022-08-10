@@ -56,7 +56,7 @@ const Advertisement1 = () => (
     />
     <Image
       src={img3}
-      className="absolute top-[82px] left-[800px]"
+      className="absolute top-[82px] left-[800px] mr-[162px]"
       alt={"Image of Keanu Reeves, holding handgun"}
     />
   </div>

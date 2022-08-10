@@ -1,0 +1,25 @@
+input[type="radio"].dateScheduleButton {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+}
+input[type="radio"].dateScheduleButton:active+div {
+  @apply bg-btnPressed;
+}
+input[type="radio"].dateScheduleButton:checked+div {
+  @apply bg-btnSelected text-white;
+}
+/*input[type="radio"].dateScheduleButtonInactive+div{*/
+/*  -webkit-appearance: none;*/
+/*  appearance: none;*/
+/*  background-color: #fff;*/
+/*  margin: 0;*/
+/*  @apply bg-shade200 text-shade400;*/
+/*}*/
+/*input[type="radio"].dateScheduleButton:focus-within+div {*/
+/*  @apply bg-btnDisabled;*/
+/*}*/
+input[type="radio"].dateScheduleButton:disabled+div {
+  @apply bg-shade200 text-shade400;
+}
