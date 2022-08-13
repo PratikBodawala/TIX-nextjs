@@ -1,4 +1,4 @@
-@import "swiper/css";
+@import "../node_modules/swiper/swiper.min.css";
 /*@import "swiper/navigation";*/
 /*@import "swiper/pagination";*/
 
@@ -6,13 +6,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.swiper-button-prev {
-  background-image: url("/images/CarouselLeftArrow.svg") !important;
-}
+/*.swiper-button-prev {*/
+/*  background-image: url("/images/CarouselLeftArrow.svg") !important;*/
+/*}*/
 
-.swiper-button-next {
-  background-image: url("/images/CarouselLeftArrow.svg") !important;
-}
+/*.swiper-button-next {*/
+/*  background-image: url("/images/CarouselRightArrow.svg") !important;*/
+/*}*/
 /*html,*/
 /*body {*/
 /*  padding: 0;*/
