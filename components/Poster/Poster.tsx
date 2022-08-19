@@ -1,5 +1,5 @@
 import Image from "next/future/image";
-import React from "react";
+import type { FC } from "react";
 export type PosterProps = {
   imageLocation: string;
   name: string;
@@ -7,7 +7,7 @@ export type PosterProps = {
   // imgAlt: string;
   // loading: "lazy" | "eager";
 };
-const Poster: React.FC<
+const Poster: FC<
   PosterProps & { imgAlt: string; loading: "lazy" | "eager" }
 > = ({ imageLocation, name, genre = [""], imgAlt, loading }) => (
   <div className="flex flex-col">

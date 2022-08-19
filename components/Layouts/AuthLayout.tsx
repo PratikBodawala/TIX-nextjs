@@ -1,5 +1,6 @@
 import Head from "next/head";
-const AuthLayout: React.FC<any> = ({ children }) => {
+import type {FC} from "react"
+const AuthLayout: FC<any> = ({ children }) => {
   return (
     <>
       <Head>

@@ -1,11 +1,11 @@
 import format from "date-fns/format";
 import style from "/styles/DateScheduleButton.module.css";
-import React from "react";
+import type { FC } from "react";
 export type DateScheduleButtonProps = {
   date: Date;
   variant: "active" | "inactive";
 };
-const DateScheduleButton: React.FC<DateScheduleButtonProps> = ({
+const DateScheduleButton: FC<DateScheduleButtonProps> = ({
   date,
   variant = "active",
 }) => (

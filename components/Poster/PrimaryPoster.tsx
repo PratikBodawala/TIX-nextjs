@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/future/image";
-import React from "react";
+import type { FC } from "react";
 import Badge from "../Badge/Badge";
 
 export type PrimaryPosterProps = {
@@ -19,7 +19,7 @@ const mapTheaterComponent = {
   "": "",
 };
 
-const PrimaryPoster: React.FC<
+const PrimaryPoster: FC<
   PrimaryPosterProps & { imgAlt: string; loading: "lazy" | "eager" }
 > = ({ imageLocation, name, imgAlt, loading, theater = [""] }) => (
   <div className="flex flex-col items-center">

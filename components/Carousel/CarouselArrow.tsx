@@ -1,10 +1,10 @@
-import React from "react";
+import type {FC} from 'react';
 import Image from "next/future/image";
 type CarouselArrowProps = {
   direction: "left" | "right";
 };
 
-const CarouselArrow: React.FC<CarouselArrowProps> = ({ direction }) => {
+const CarouselArrow: FC<CarouselArrowProps> = ({ direction }) => {
   return (
     // TODO not sure if this is the best way to do this
     <Image

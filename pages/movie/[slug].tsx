@@ -4,9 +4,10 @@ import "swiper/css";
 import DateScheduleButton from "../../components/Schedule/DateScheduleButton";
 import isPast from "date-fns/isPast";
 import Dropdown from "../../components/Dropdown/Dropdown";
+import { NextPage } from "next";
 const datesDiff = [-2, -1, 0, 1, 2, 3, 4, 5];
 const data = { name: "Spiderman: No way home" };
-const Movie = () => (
+const Movie: NextPage = () => (
   <section className="px-[72px]">
     <h1 className="mt-6 mb-4 font-bold text-3xl text-shade900">Select Date</h1>
     <p className="text-base font-normal text-shade700">

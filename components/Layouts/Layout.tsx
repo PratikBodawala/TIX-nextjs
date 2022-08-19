@@ -1,9 +1,9 @@
 import NavBar from './NavBar';
 import Footer from './Footer';
-import React from "react";
+import type {FC} from 'react';
 import Head from "next/head";
 
-const Layout: React.FC<any> = ({ children })=> {
+const Layout: FC<any> = ({ children })=> {
   return (<>
       <Head>
         <title>TIX ID</title>
