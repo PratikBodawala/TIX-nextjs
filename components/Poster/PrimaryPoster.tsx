@@ -9,10 +9,13 @@ export type PrimaryPosterProps = {
   theater: Array<"xxi" | "cgv" | "cinepolis" | "">;
 };
 
+// Customer color contrast for accessibility
 const mapTheaterComponent = {
-  xxi: <Badge text="XXI" color="bg-pastelYellow" />,
-  cgv: <Badge text="CGV" color="bg-cgvRed" />,
-  cinepolis: <Badge text="CINÉPOLIS" color="bg-cinepolisBlue" />,
+  xxi: <Badge text="XXI" color="bg-pastelYellow" textColor={"#555"} />,
+  cgv: <Badge text="CGV" color="bg-cgvRed" textColor={"#1c0000"} />,
+  cinepolis: (
+    <Badge text="CINÉPOLIS" color="bg-cinepolisBlue" textColor={"#a8a8a8"} />
+  ),
   "": "",
 };
 
